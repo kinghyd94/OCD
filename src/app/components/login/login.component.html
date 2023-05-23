@@ -1,51 +1,66 @@
-<div class="page">
-    <div class="rectangle1">
-      <mat-card style="float: left;width: 40%;">
-        <mat-card-content class="rectangle1860"></mat-card-content>
-    
-          <div class="img1">
-            <img src="../assets/images/home.png" /><br />
-          </div>
-          <div class="rectangle1861"></div>
-          <div class="group2">
-            <img src="..\assets\Images\homereverse.png" />
-          </div>
-          <div>
-            <iframe class="video" src="https://www.youtube.com/embed/1ozGKlOzEVc" frameborder="0" allowfullscreen></iframe>
-          </div>
-      </mat-card>
-      
-      <div style="float:right; width:50%;margin-top: 3%;border: none;">
-        <div>
-        <label style="color: #012d9e;
-        font-size: 24px;
-        font-weight: bold; letter-spacing: 1px; font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;">Good Morning,</label></div>
-    
-    <div>
-      <label style="color: #012d9e;
-         letter-spacing: 1px;font-size: 32px;"> <br/>Let us help you in conversion <br />of your files...</label></div>
-       
+<div class="container">
+  
+<div class="row">
+  <div class="col">
+    <mat-card style="float: left;width: 40%;">
+      <mat-card-content class="rectangle1860"></mat-card-content>
+
+      <div class="img1">
+        <img src="../assets/images/home.png" /><br />
+      </div>
+      <div class="rectangle1861"></div>
+      <div class="group2">
+        <img src="..\assets\Images\homereverse.png" />
+      </div>
       <div>
-        <label style="color: #94A3B8;; height: min-content;
-            flex-direction: column;letter-spacing: 1px;font-size: 14px;"> <br/>The primary purpose of an OCR is to convert text on an image or printed document into machine-readable 
-            information while making it searchable and editable.</label><br/></div><br/>
-            <form class="example-form">
-              <label class="enterUsername">Enter USERNAME</label><br/><br/>
-              <mat-form-field >
-            <input matInput  placeholder="Typed value" >
-              </mat-form-field>
-            <br/>
-            <mat-label class="enterUsername">ENTER E-MAIL</mat-label><br/><br/>
-              <mat-form-field class="example-full-width " >
-                <input matInput  type="email"  placeholder="abc@email.com" formControlName="email" > 
-             </mat-form-field>
-              <br/>
-           
-              <button  mat-raised-button color="primary">Login&nbsp;&nbsp;&nbsp;</button>&nbsp;&nbsp;&nbsp;
-              <button  mat-raised-button color="primary">Cancel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-            </form>
+        <iframe class="video" src="https://www.youtube.com/embed/1ozGKlOzEVc" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </mat-card>
+  </div>
+  <div class="col">
+    <div class="row">
+      <div class="col">
+        <div>
+          <label style="color: #012d9e;
+          font-size: 24px;
+          font-weight: bold; letter-spacing: 1px; font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+      'Liberation Sans', sans-serif;">Good Morning,</label>
+        </div>
+  
+        <div>
+          <label style="color: #012d9e;
+           letter-spacing: 1px;font-size: 32px;"> <br />Let us help you in conversion <br />of your files...</label>
+        </div>
+  
+        <div>
+          <label style="color: #94A3B8;; height: min-content;
+              flex-direction: column;letter-spacing: 1px;font-size: 14px;"> <br />The primary purpose of an OCR is to
+            convert text on an image or printed document into machine-readable
+            information while making it searchable and editable.</label><br />
+        </div>
+      </div>
+      
+    </div>
+    <div class="row" style="padding-top: 100px;">
+      <div class="col">
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>{{label.LOGIN_USERNAME}}</mat-label>
+            <input matInput required>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>{{label.LOGIN_EMAIL}}</mat-label>
+            <input matInput type="email" required>
+          </mat-form-field>
+        </form>
+        <section>
+          <div class="example-button-row">
+            <button mat-raised-button color="primary">{{label.LOGIN_LOGIN}}</button>
+            <button mat-raised-button color="accent">{{label.LOGIN_CANCEL}}</button>
           </div>
-          
-        </div>
-        </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

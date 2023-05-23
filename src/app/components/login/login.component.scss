@@ -1,6 +1,6 @@
 body{
     margin-top:20px;
-    background: #f6f9fc;
+    // background: #f6f9fc;
 }
 .account-block {
     padding: 0;
@@ -36,8 +36,13 @@ body{
     color: #5369f8 !important;
 }
 
-.btn-theme {
-    background-color: #5369f8;
-    border-color: #5369f8;
-    color: #fff;
-}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    // display: flex;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }

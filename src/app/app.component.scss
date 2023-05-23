@@ -1,73 +1,41 @@
-.footer {
-    background-color: #2F296A !important;
-    color: #FFFFFF;
-    padding-top: 60px;
+
+
+.msg{
+font-size: small;
 }
-.p {
-    margin-top: revert !important;
-    color: #fff;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+button:focus,
+input:focus{
+  outline: none;
+  box-shadow: none;
 }
-ul {
-    list-style: none;
+a,
+a:hover{
+  text-decoration: none;
 }
-.footer-bottom {
-    background: #231f54;
-    padding: 15px 75px;
+
+body{
+  font-family: 'Roboto', sans-serif;
 }
-.topfooter {
+
+/*------------------  */
+.otp-form-group{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+}
+.otp-inputbar{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
     text-align: center;
-    // padding-bottom: 20px;
-    border-bottom: 1px solid #535356;
-    margin-bottom: 40px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
 }
-.sociallinks{
-    li{
-        display: inline-block;
-        margin: 0 5px;
-        a{
-            width: 46px;
-            height: 46px;
-            border-radius: 50%;
-            border: 1px solid white;
-            display: block;
-            padding: 4px 0;
-            position: relative;
-            @media screen and (max-width:1440px) {
-                padding: 5px 0;
-                width: 40px;
-                height: 40px;
-            }
-            @media screen and (max-width:1199px) {
-                width: 40px;
-                height: 40px;
-                padding: 5px 0;
-            }
-            @media screen and (max-width:767px) {
-                width: 34px;
-                height: 34px;
-            }
-            svg{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                width: 20px;
-                fill: white;
-                @media screen and (max-width:1440px) {
-                    width: 18px;
-                }
-                @media screen and (max-width:767px) {
-                    width: 14px;
-                }
-            }
-            &:hover{
-                background: yellow;
-                border-color: yellow;
-                svg{fill: blue(#000000);}
-            }
-        }
-    }
-}
+#errmsg
+{
+color: red;
+}   

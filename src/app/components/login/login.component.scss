@@ -1,6 +1,6 @@
-body{
-    margin-top:20px;
-}
+// body{
+//     margin-top:20px;
+// }
 .example-form {
     min-width: 150px;
     max-width: 500px;
@@ -21,4 +21,8 @@ body{
   'wght' 400,
   'GRAD' 0,
   'opsz' 48
+}
+.container{
+        max-width: 1040px !important;
+        height: 50px;
 }

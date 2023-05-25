@@ -2,20 +2,24 @@
 
   <div class="row">
     <div class="col">
-      <mat-card style="float: left;width: 40%;">
-        <mat-card-content class="rectangle1860"></mat-card-content>
-
+      <div>
         <div class="img1">
           <img src="../assets/images/home.png" /><br />
         </div>
         <div class="rectangle1861"></div>
         <div class="group2">
-          <img src="..\assets\Images\homereverse.png" />
+          <!-- <img src="..\assets\Images\homereverse.png" /> -->
         </div>
         <div>
-          <iframe class="video" src="https://www.youtube.com/embed/1ozGKlOzEVc" frameborder="0" allowfullscreen></iframe>
+          <!-- <iframe class="video" src="https://www.youtube.com/embed/1ozGKlOzEVc" frameborder="0" allowfullscreen></iframe> -->
+          <button mat-raised-button color="primary" class="play-button">
+            <span class="material-symbols-outlined">
+              play_circle
+              </span>
+          </button>
+
         </div>
-      </mat-card>
+      </div>
     </div>
     <div class="col">
       <div class="row">
@@ -43,7 +47,7 @@
       </div>
       <div class="row" style="padding-top: 30px;">
         <div class="col">
-          <section class="vh-100">
+          <section>
             <form class="">
               <div class="form-outline">
                 <label class="form-label" for="userName">{{label.LOGIN_USERNAME}}</label><br>
@@ -68,7 +72,7 @@
               </div>
     
               <div class="text-center text-lg-start mt-4 pt-2">
-                <button mat-flat-button type="button" color="primary" class="btn-lg"
+                <button mat-raised-button type="button" color="primary" class="btn-lg"
                   style="padding-left: 6.5rem; padding-right: 6.5rem;">Login</button>
               </div>
     

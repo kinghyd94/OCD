@@ -1,66 +1,81 @@
 <div class="container">
-  
-<div class="row">
-  <div class="col">
-    <mat-card style="float: left;width: 40%;">
-      <mat-card-content class="rectangle1860"></mat-card-content>
 
-      <div class="img1">
-        <img src="../assets/images/home.png" /><br />
-      </div>
-      <div class="rectangle1861"></div>
-      <div class="group2">
-        <img src="..\assets\Images\homereverse.png" />
-      </div>
-      <div>
-        <iframe class="video" src="https://www.youtube.com/embed/1ozGKlOzEVc" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </mat-card>
-  </div>
-  <div class="col">
-    <div class="row">
-      <div class="col">
+  <div class="row">
+    <div class="col">
+      <mat-card style="float: left;width: 40%;">
+        <mat-card-content class="rectangle1860"></mat-card-content>
+
+        <div class="img1">
+          <img src="../assets/images/home.png" /><br />
+        </div>
+        <div class="rectangle1861"></div>
+        <div class="group2">
+          <img src="..\assets\Images\homereverse.png" />
+        </div>
         <div>
-          <label style="color: #012d9e;
+          <iframe class="video" src="https://www.youtube.com/embed/1ozGKlOzEVc" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <div>
+            <label style="color: #012d9e;
           font-size: 24px;
           font-weight: bold; letter-spacing: 1px; font-family: Roboto, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
       'Liberation Sans', sans-serif;">Good Morning,</label>
-        </div>
-  
-        <div>
-          <label style="color: #012d9e;
-           letter-spacing: 1px;font-size: 32px;"> <br />Let us help you in conversion <br />of your files...</label>
-        </div>
-  
-        <div>
-          <label style="color: #94A3B8;; height: min-content;
-              flex-direction: column;letter-spacing: 1px;font-size: 14px;"> <br />The primary purpose of an OCR is to
-            convert text on an image or printed document into machine-readable
-            information while making it searchable and editable.</label><br />
-        </div>
-      </div>
-      
-    </div>
-    <div class="row" style="padding-top: 100px;">
-      <div class="col">
-        <form class="example-form">
-          <mat-form-field class="example-full-width">
-            <mat-label>{{label.LOGIN_USERNAME}}</mat-label>
-            <input matInput required>
-          </mat-form-field>
-          <mat-form-field class="example-full-width">
-            <mat-label>{{label.LOGIN_EMAIL}}</mat-label>
-            <input matInput type="email" required>
-          </mat-form-field>
-        </form>
-        <section>
-          <div class="example-button-row">
-            <button mat-raised-button color="primary">{{label.LOGIN_LOGIN}}</button>
-            <button mat-raised-button color="accent">{{label.LOGIN_CANCEL}}</button>
           </div>
-        </section>
+
+          <div>
+            <label style="color: #012d9e;
+           letter-spacing: 1px;font-size: 32px;"> <br />Let us help you in conversion <br />of your files...</label>
+          </div>
+
+          <div>
+            <label style="color: #94A3B8;; height: min-content;
+              flex-direction: column;letter-spacing: 1px;font-size: 14px;"> <br />The primary purpose of an OCR is to
+              convert text on an image or printed document into machine-readable
+              information while making it searchable and editable.</label><br />
+          </div>
+        </div>
+
+      </div>
+      <div class="row" style="padding-top: 30px;">
+        <div class="col">
+          <section class="vh-100">
+            <form class="">
+              <div class="form-outline">
+                <label class="form-label" for="userName">{{label.LOGIN_USERNAME}}</label><br>
+                <mat-form-field appearance="outline" class="username-field">
+                  <input matInput type="text" id="userName" placeholder="Enter userName" />
+                </mat-form-field>
+              </div>
+          
+              <div class="form-outline">
+                <label class="form-label" for="password">{{label.LOGIN_PASSWORD}}</label><br>
+                <mat-form-field appearance="outline">
+                  <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password">
+                  <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+                </mat-form-field>
+                
+              </div>
+    
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#!">Forgot password?</a>
+              </div>
+    
+              <div class="text-center text-lg-start mt-4 pt-2">
+                <button mat-flat-button type="button" color="primary" class="btn-lg"
+                  style="padding-left: 6.5rem; padding-right: 6.5rem;">Login</button>
+              </div>
+    
+            </form>
+          </section>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>

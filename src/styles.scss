@@ -1,8 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-.mdc-text-field__input {
-    height: 38px !important;
-} 
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'material-icons/iconfont/material-icons.css';
 .example-button-row {
     display: table-cell;
     max-width: 600px;
   }
+  a,
+a:hover{
+  text-decoration: none;
+}
+.mdc-text-field__input {
+    height: 28px !important;
+}
+.mat-mdc-form-field-infix {
+    min-height: 0px !important;
+}
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}

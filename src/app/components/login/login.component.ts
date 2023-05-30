@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import { LabelConstants } from 'src/app/shared/label.constant';
+import { ToastrService } from 'ngx-toastr';
 import {
   FormControl,
   FormGroupDirective,
@@ -28,7 +29,7 @@ username: any;
 emailFormControl: any
 label = LabelConstants;
   animal: any;
-constructor(private fb: FormBuilder, private dialog: MatDialog ){
+constructor(private fb: FormBuilder, private dialog: MatDialog, private toastr: ToastrService ){
   this.myForm = this.fb.group({
     username: [undefined, [Validators.required]],
     phone: [undefined, [Validators.required]],
@@ -38,9 +39,7 @@ constructor(private fb: FormBuilder, private dialog: MatDialog ){
 });
 }
 ngOnInit(): void {
-  // this.myForm = new FormGroup({
-  //   emailFormControl: new FormControl('', [Validators.required, Validators.email])
-  // })
+
 }
 openDialog(): void {
   const dialogRef = this.dialog.open(ForgotPasswordComponent, {
@@ -52,6 +51,12 @@ openDialog(): void {
   dialogRef.afterClosed().subscribe((result: any) => {
     console.log('The dialog was closed');
     this.animal = result;
+  });
+}
+
+login() {
+  this.toastr.success('Logged in successfully', 'Login', {
+    positionClass: 'toast-top-right'
   });
 }
 }

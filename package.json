@@ -21,6 +21,7 @@
     "@angular/router": "^16.0.2",
     "bootstrap": "^5.2.3",
     "material-icons": "^1.13.7",
+    "ngx-toastr": "^17.0.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

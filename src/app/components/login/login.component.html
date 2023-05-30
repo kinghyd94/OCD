@@ -1,34 +1,40 @@
 <div class="container">
 
   <div class="row">
-    <div class="col">
-      <div>
+    <div class="col-md-6 rectangle-card">
         <div class="img1">
           <img src="../assets/images/home.png" /><br />
         </div>
-        <!-- <div class="group2">
-          <img src="..\assets\Images\homereverse.png" />
-        </div> -->
-        <div>
-          <iframe class="video" src="https://www.youtube.com/embed/1ozGKlOzEVc" frameborder="0" allowfullscreen></iframe>
-          <!-- <button mat-raised-button color="primary" class="play-button">
-            <span class="material-symbols-outlined">
-              play_circle
-              </span>
-          </button> -->
-        </div>
+        <div style="padding-top: 30px; align-items: center;">
+          <!-- <iframe class="video" src="https://www.youtube.com/embed/1ozGKlOzEVc" frameborder="0" allowfullscreen></iframe> -->
+          <button mat-raised-button color="" class="play-button">
+            <span class="button1">
+             <a href="https://www.youtube.com/embed/1ozGKlOzEVc" target="_blank">
+              <img style="height: 85px; width: 85px;" src="../../../assets/images/play_circle.png" alt="">
+             </a>
+            </span>
+          </button>
       </div>
     </div>
-    <div class="col">
+    <div class="col-md-6">
       <div class="row">
         <div class="col">
           <div>
-          <h2 style="color: #012d9e;
-         letter-spacing: 1px;">Good Morning,</h2>
+          <p style="color: #012d9e;
+         letter-spacing: 1px; font-family: Roboto;
+font-size: 31px;
+font-weight: 700;
+letter-spacing: 1px;
+text-align: left;
+">Good Morning,</p>
           </div>
           <div>
-            <h4 style="color: #012d9e;
-           letter-spacing: 1px;"> <br />Let us help you in conversion <br />of your files...</h4>
+            <h4 style="font-family: Roboto;
+            font-size: 31mpx;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-align: left;
+            color: #012d9e;"> <br />Let us help you in conversion <br />of your files...</h4>
           </div>
 
           <div>
@@ -46,14 +52,14 @@
               <div class="form-outline">
                 <label class="form-label" for="userName">{{label.LOGIN_USERNAME}}</label><br>
                 <mat-form-field appearance="outline" class="username-field">
-                  <input matInput type="text" id="userName" placeholder="Enter userName" />
+                  <input class="input" matInput type="text" id="userName" placeholder="Enter userName" />
                 </mat-form-field>
               </div>
           
               <div class="form-outline">
                 <label class="form-label" for="password">{{label.LOGIN_PASSWORD}}</label><br>
                 <mat-form-field appearance="outline">
-                  <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password">
+                  <input class="input" matInput [type]="hide ? 'password' : 'text'" placeholder="Password">
                   <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
                     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                   </button>
@@ -62,12 +68,24 @@
               </div>
     
               <div class="d-flex justify-content-between align-items-center">
-                <a href="#!">Forgot password?</a>
+                <div style="color: #012d9e; cursor: pointer;" (click)="openDialog()">Forgot password?</div>
               </div>
     
               <div class="text-center text-lg-start mt-4 pt-2">
-                <button mat-raised-button type="button" color="primary" class="btn-lg"
-                  style="padding-left: 6.5rem; padding-right: 6.5rem;">Login</button>
+                <button mat-raised-button type="button" style="
+                display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 8px;
+  
+  width: 250px;
+  height: 56px;
+  background: #365FB5;
+  border-radius: 8px;
+  color: #fff;
+  " class="btn-lg">Login</button>
               </div>
     
             </form>

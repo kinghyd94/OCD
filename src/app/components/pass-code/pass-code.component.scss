@@ -1,0 +1,20 @@
+.mdc-text-field__input {
+    height: 20px !important;
+    // width: 25px !important;
+}
+::ng-deep.pass-code-input .mat-mdc-text-field-wrapper {
+    width: 19% !important;
+    height: 20% !important;
+}
+::ng-deep.username-field.mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__trailing {
+    border-top-left-radius: 0;
+    border-top-right-radius: var(--mdc-shape-small, 12px) !important;
+    border-bottom-right-radius: var(--mdc-shape-small, 12px) !important;
+    border-bottom-left-radius: 0;
+  }
+  ::ng-deep.username-field.mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__leading {
+    border-top-left-radius: var(--mdc-shape-small, 12px) !important;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: var(--mdc-shape-small, 12px) !important;
+  }

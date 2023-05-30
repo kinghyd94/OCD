@@ -19,3 +19,18 @@ a:hover{
     padding-top: 10px !important;
     padding-bottom: 10px !important;
 }
+.mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__trailing {
+  border-top-left-radius: 0;
+  border-top-right-radius: var(--mdc-shape-small, 8px) !important;
+  border-bottom-right-radius: var(--mdc-shape-small, 8px) !important;
+  border-bottom-left-radius: 0;
+}
+.mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__leading {
+  border-top-left-radius: var(--mdc-shape-small, 8px) !important;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: var(--mdc-shape-small, 8px) !important;
+}
+.mat-mdc-dialog-container {
+  --mdc-dialog-container-shape: 8px !important;
+}

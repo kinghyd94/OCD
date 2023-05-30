@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
 import { LabelConstants } from 'src/app/shared/label.constant';
 import {
   FormControl,
@@ -8,7 +9,12 @@ import {
   Validators,
   FormBuilder,
 } from '@angular/forms';
+import { ForgotPasswordComponent } from '../forgot-password/forgot-password.component';
 
+export interface DialogData {
+  animal: string;
+  name: string;
+}
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -21,7 +27,8 @@ phoneNumber: any;
 username: any;
 emailFormControl: any
 label = LabelConstants;
-constructor(private fb: FormBuilder){
+  animal: any;
+constructor(private fb: FormBuilder, private dialog: MatDialog ){
   this.myForm = this.fb.group({
     username: [undefined, [Validators.required]],
     phone: [undefined, [Validators.required]],
@@ -34,6 +41,18 @@ ngOnInit(): void {
   // this.myForm = new FormGroup({
   //   emailFormControl: new FormControl('', [Validators.required, Validators.email])
   // })
+}
+openDialog(): void {
+  const dialogRef = this.dialog.open(ForgotPasswordComponent, {
+    width: '480px',
+    height: '410px',
+    data: {}
+  });
+
+  dialogRef.afterClosed().subscribe((result: any) => {
+    console.log('The dialog was closed');
+    this.animal = result;
+  });
 }
 }
 

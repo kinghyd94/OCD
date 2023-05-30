@@ -13,6 +13,7 @@
   top: 40px;
   height: 140px !important;
   width: 446px !important;
+  background-color: #1B3D6D !important;
 }
 
 .material-symbols-outlined {
@@ -22,7 +23,14 @@
   'GRAD' 0,
   'opsz' 48
 }
-.container{
-        max-width: 1040px !important;
-        height: 50px;
+.container {
+  padding: 50px;
+  // background: #BEC3CD !important;
+}
+.rectangle-card {
+left: 0%;
+right: 0%;
+top: 0%;
+background-color: #FBFBFB !important;
+border-radius: 16px;
 }

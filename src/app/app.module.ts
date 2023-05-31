@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './components/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
@@ -17,6 +17,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { PassCodeComponent } from './components/pass-code/pass-code.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
+import { FooterBottomComponent } from './components/footer/footer-bottom/footer-bottom.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ResetPasswordComponent } from './components/reset-password/reset-passwo
     LoginComponent,
     ForgotPasswordComponent,
     PassCodeComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    FooterBottomComponent
   ],
   imports: [
     BrowserModule,
